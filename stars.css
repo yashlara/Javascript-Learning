@@ -17,3 +17,9 @@ color : red;
 #alert2{
 color : red;
 }
+
+#box{
+    border: 10px;
+    border-color: darkgray;
+    border-style: solid;
+}
