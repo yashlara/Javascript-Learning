@@ -6,8 +6,7 @@ function convert(){
 
      var l= x-parseInt(x);
 
-     if(l!== 0.5 && l!==0) //For displaying an alert to notify the user that the value is being rounded off.
-     document.getElementById("alert1").innerHTML="Please note that your value is rounded off to the nearest whole integer or half decimal."
+     
 
     x = Math.round(x * 2) / 2; //Coverts value into the nearest whole integer or the nearest integer.5
 
@@ -23,7 +22,9 @@ function convert(){
             document.getElementById("alert2").innerHTML="Please enter a number!"
 
             else{
-        
+                if(l!== 0.5 && l!==0 )
+                //For displaying an alert to notify the user that the value is being rounded off.
+               document.getElementById("alert1").innerHTML="Please note that your value is rounded off to the nearest whole integer or half decimal."
 
     for (var i =0; i<y; i++) //Prints the stars for the whole intergers
     {
