@@ -23,3 +23,17 @@ color : red;
     border-color: darkgray;
     border-style: solid;
 }
+
+#bttn1{
+    color: white;
+    background-image: linear-gradient(gray, black);
+
+    height : 40px;
+}
+
+#bttn2{
+    color: white;
+    background-image: linear-gradient(gray, darkgray);
+
+    height : 40px;
+}
