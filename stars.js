@@ -4,7 +4,10 @@ function convert(){
 
     var x=document.getElementById("num").value;  //Catching the value
 
-    
+     var l= x-parseInt(x);
+
+     if(x!== 0.5)
+     document.getElementById("alert1").innerHTML="Please note that your value is rounded off to the nearest whole integer or half decimal."
 
     x = Math.round(x * 2) / 2; //Coverts value into the nearest whole integer or the nearest integer.5
 
