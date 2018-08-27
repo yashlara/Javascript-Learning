@@ -1,0 +1,19 @@
+*{
+font-family: Georgia;
+}
+
+
+body{
+background-color: whitesmoke;
+
+align-self: center;
+
+}
+
+#alert1{
+color : red;
+}
+
+#alert2{
+color : red;
+}
