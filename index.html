@@ -1,131 +1,97 @@
 <!DOCTYPE html>
 <html>
-    <head>
 
-        <style>
+<head>
+    <title>Day2 Calculator Assignment</title>
 
-           *{
-                font-family: Georgia;
-             }
+    <link rel="stylesheet" type="text/css" href="day2.css">
+</head>
 
+<body>
 
+    <form name="form1">
+        <table align="center">
 
+            <tr>
+                <td colspan="4">
+                    <input type="text" name="result" placeholder="0"></input>
+                </td>
+            </tr>
 
-            body{
-                background-color: whitesmoke;
+            <tr>
+                <td>
+                    <button type="button" class="bttn_others" onclick="clearall(value)" value="">C</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_others" onclick="number(value)" value="/">/</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_others" onclick="number(value)" value=".">
+                        <strong>.</strong>
+                    </button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_others" onclick="number(value)" value="%">%</button>
 
-                align-self: center;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="7">7</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="8">8</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="9">9</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_others" onclick="number(value)" value="*">X</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="4">4</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="5">5</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="6">6</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_others" onclick="number(value)" value="-">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="1">1</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="2">2</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_num" onclick="number(value)" value="3">3</button>
+                </td>
+                <td>
+                    <button type="button" class="bttn_others" onclick="number(value)" value="+">+</button>
+                </td>
+            </tr>
+            <tr>
 
-                
-            }
-            #alert1{
-               color : red;
-              }
+                <td colspan="3">
+                    <button type="button" class="bttn_num" onclick="number(value)" value="0">0</button>
+                </td>
 
-             #alert2{
-                color : red;
-            }
-        
-        </style>
+                <td>
+                    <button type="button" class="bttn_others" onclick="calculate()">=</button>
+                </td>
+            </tr>
 
-    </head>
+        </table>
+    </form>
 
-    <body>
+    <script src="day2.js"></script>
+</body>
 
-        
-
-        
-
-        <center>
-
-                <h1><u>Star Rating System</u></h1>
-
-        <p>Please enter a number rating : </p>
-
-        <input type="number" id="num"> &emsp; <p id="alert1"></p><br><br>  
-
-        <p id="alert2"></p>
-
-        <button type="submit" id="click" onclick="convert()">Click Here for the Star rating</button><br><br> 
-
-        <button type="submit"  onClick="refreshPage()">Refresh Page</button><br><br> 
-
-        <br><br>
-
-
-
-        <script>
-            
-            function convert(){
-
-                
-
-            var x=document.getElementById("num").value;  //Catching the value
-
-            
-
-            x = Math.round(x * 2) / 2; //Coverts value into the nearest whole integer or the nearest integer.5
-
-            var y = parseInt(x);
-
-            var z= x-y; //Stores the 0.5 value if any, otherwise 0.
-
-
-            if(x<=5){
-
-
-                    if (y=="")
-                    document.getElementById("alert2").innerHTML="Please enter a number!"
-
-                    else{
-                
-
-            for (var i =0; i<y; i++) //Prints the stars for the whole intergers
-            {
-                var img = document.createElement("IMG");
-                img.setAttribute("src", "star.jpg");
-                img.setAttribute("width", "65");
-                img.setAttribute("height", "50");
-                img.setAttribute("alt", "Star");
-                document.body.appendChild(img); 
-            }
-
-            if (z==0.5){ //Checks if a 0.5 star is needed to be printed or not.
-                var img = document.createElement("IMG");
-                img.setAttribute("src", "halfstar.jpg");
-                img.setAttribute("width", "50");
-                img.setAttribute("height", "50");
-                img.setAttribute("alt", "halfstar");
-                document.body.appendChild(img);
-
-            }
-
-
-         }
-    
-    
-
-        }
-
-        else{
-            document.getElementById("alert1").innerHTML="Please enter a number between 0 and 5"; //Alerts user to enter according to requirements.
-        }
-
-            
-            
-        }
-
-          //To refesh page
-            function refreshPage(){
-             window.location.reload();
-           } 
-
-        </script>
-        </center>
-
-
-    </body>
-
-
-    
 </html>

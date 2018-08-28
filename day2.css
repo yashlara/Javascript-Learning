@@ -1,0 +1,66 @@
+body {
+    background-color: cornflowerblue;
+}
+
+table {
+    padding: 15px;
+    border: 5px lightsteelblue;
+    width: 33%;
+    background-color: lightsteelblue;
+    box-shadow: 4px 4px 20px black;
+}
+
+td {
+    padding-top: 5px;
+    padding-right: 4px;
+    padding-bottom: 5px;
+    padding-left: 4px;
+    height: 100%;
+    color: black;
+    font: bold;
+    text-align: center;
+    font-weight: 300;
+}
+
+input {
+    width: 103%;
+    height: 75px;
+    background-color: rgb(207, 216, 228);
+    position: relative;
+    margin: 0px;
+    left: -5px;
+    top: 1px;
+    border: none;
+    text-align: end;
+}
+
+button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    background-color: lightsteelblue;
+}
+
+.bttn_num:hover {
+    background-color: rgb(185, 203, 226);
+    transition-duration: 0.4s;
+    color: cornflowerblue;
+    font-weight: bold;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -1px);
+}
+
+.bttn_others:hover {
+    background-color: rgb(111, 147, 223);
+    transition-duration: 0.4s;
+    color: rgb(195, 202, 233);
+    font-weight: bold;
+    box-shadow: 0 20px 20px -10px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -1px);
+}
+
+* {
+    font-size: 18px;
+    font-weight: bolder !important;
+    font-family: 'Segoe UI';
+}
